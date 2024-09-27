@@ -2,18 +2,12 @@ import '../../domain/entities/product.dart';
 
 class ProductModel extends Product {
   ProductModel({
-    required int id,
-    required String title,
-    required String description,
-    required double price,
-    required String image,
-  }) : super(
-          id: id,
-          title: title,
-          description: description,
-          price: price,
-          image: image,
-        );
+    required super.id,
+    required super.title,
+    required super.description,
+    required super.price,
+    required super.image,
+  });
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
     return ProductModel(

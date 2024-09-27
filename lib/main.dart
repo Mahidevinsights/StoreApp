@@ -6,10 +6,12 @@ import 'presentation/pages/product_list_page.dart';
 import 'presentation/providers/product_provider.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ],
-      child: MaterialApp(
+      child: const MaterialApp(
         home: ProductListPage(),
       ),
     );
