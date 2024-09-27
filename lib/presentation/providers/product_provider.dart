@@ -8,8 +8,11 @@ class ProductProvider with ChangeNotifier {
   List<Product> _products = [];
   bool _isSortedAsc = true;
 
-  List<Product> get products =>
-      _isSortedAsc ? _products : _products.reversed.toList();
+  List<Product> get products {
+    _products.sort((a, b) =>
+        _isSortedAsc ? a.price.compareTo(b.price) : b.price.compareTo(a.price));
+    return _products;
+  }
 
   ProductProvider(this.productRepository);
 
