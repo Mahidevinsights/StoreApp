@@ -13,3 +13,6 @@ home_page-
 
 details_page -
 <img width="314" alt="storeappdetail" src="https://github.com/user-attachments/assets/9d9d4939-acc6-40d4-b807-88ac89cedda2">
+
+
+apk file - https://drive.google.com/file/d/1hJMdp7uU0sm9ET_1NUYMwwQQ8UwnwY6q/view?usp=drive_link
